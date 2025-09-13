@@ -1,0 +1,14 @@
+{
+    "name": "athena-ai-frontend",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "athena-ai-frontend": "file:",
+        "firebase": "^11.6.0"
+    }
+}

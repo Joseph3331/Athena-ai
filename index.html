@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Athena AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="Athena AI - Your intelligent AI assistant with file processing capabilities" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <button class="theme-toggle" id="theme-toggle">
+    <i class="fas fa-moon"></i>
+    <span>Dark mode</span>
+  </button>
+
+  <div class="app-wrapper">
+    <div class="sidebar">
+      <div class="new-chat">
+        <button id="newChatBtn">
+          <i class="fas fa-plus"></i>
+          New chat
+        </button>
+      </div>
+      
+      <div class="chat-history">
+        <div class="history-header">Chat History</div>
+        <div class="history-list" id="chatHistory">
+          <!-- Chat history items will be added here -->
+        </div>
+      </div>
+
+      <div class="user-profile">
+        <div class="profile-info">
+          <img src="https://ui-avatars.com/api/?name=User&background=random" alt="User" class="avatar" />
+          <span>User</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="chat-container" id="chatContainer">
+        <div class="welcome-message">
+          <h1>Welcome to Athena AI</h1>
+          <p>Your intelligent assistant powered by advanced AI. Ask questions, upload files, and get detailed responses.</p>
+        </div>
+        <!-- Chat messages will appear here -->
+      </div>
+
+      <div class="input-container">
+        <div class="input-wrapper">
+          <textarea 
+            id="prompt" 
+            placeholder="Message Athena..." 
+            rows="1"
+            autofocus
+          ></textarea>
+          <button id="submitBtn" class="send-button" title="Send message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="input-footer">
+          <span>Athena AI may produce inaccurate information about people, places, or facts.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
